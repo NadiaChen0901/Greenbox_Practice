@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁｜無毒農 - 友善環境的安心水果</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="0421_reset.css">
+    <link href="./fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fruitbox.blob.core.windows.net/pagematerials/GreenBoxShortCutIcon.ico" rel="shortcut icon" type="image/x-icon">
+    <style>
+        /* ----------------------navbar---------------------- */
+        .navbar {
+            width: 100%;
+            height: 108px;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            border-bottom: 1px solid #ccc;
+            box-shadow: 1px 0 5px rgb(0 0 0 / 15%);
+            z-index: 1000;
+        }
+        .newuser {
+            border: 1px solid #4ba83bde;
+            padding: 3px 3px;
+        }
+        .greenhover {
+            text-decoration: none;
+            color: #4ba83bde;
+        }
+        .greenhover:hover {
+            text-decoration: none;
+            color: #4ba83bde;
+        }
+        .navbottom {
+            margin-left: 11%;
+        }
+        .navbottom .li-green {
+            float: left;
+            padding-right: 30px;
+            color: #4ba83bde;
+            font-weight: 800;
+        }
+        .navbottom .li-green:hover {
+            color: #c8a93f;
+            text-decoration: none;
+        }
+        .li-red {
+            float: left;
+            color: crimson;
+            font-weight: 800;
+            padding-right: 25px;
+        }
+        .li-red:hover {
+            color: #c8a93f;
+            text-decoration: none;
+        }
+      /* ----------------------main------------------------ */
+        .header-hover:hover {
+            opacity: .8;
+        }
+        .fivelinks {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .five-links {
+            float: left;
+            color: #fff;
+            background-color: #4ba83b;
+            margin-right: 30px;
+            padding: 15px 40px;
+            border-radius: 5px;
+        }
+        .five-links:hover {
+            background-color: #4ba83bde;
+        }
+        .title:hover {
+            opacity: .8;
+        }
+        .more:hover{
+            opacity: .8;
+            text-decoration: none;
+        }
+        .img-wrap:hover, .buy:hover, .intro:hover, .post:hover{
+            opacity: .8;
+        }
+        .story-title:hover {
+            opacity: .8;
+        }
+        .fb:hover, .line:hover {
+            opacity: .8;
+        }
+        .company:hover {
+            opacity: .8;
+        }
+        /* ----------------------footer---------------------- */
+        footer {
+            height: 130px;
+            background-color: #4ba83b;
+            color: #fff;
+        }
+        .about, .address {
+            color: #fff;
+        }
+        .about:hover, .address:hover {
+            color: #fff;
+            opacity: .8;
+        }
+        /* ----------------------backtotop------------------- */
+        .backtotop {
+            position: fixed;
+		    right: 25px;
+		    bottom: 70px;
+		    cursor: pointer;
+		    display: block;
+        }
+        .backtotop a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar d-flex">
+        <div class="navtop container">
+            <div class="row navtop-left  align-items-center">
+                <img class="mr-3" src="./img/logo.png" style="width: 30%; cursor: pointer;" alt="">
+                <div class="search" style="border: 1px solid black; width: 170px;">
+                    <i class="fas fa-search mx-2 mt-2" style="color: #4ba83b;float: left;"></i>
+                    <p style="float: left; line-height: 2; color: rgb(129, 129, 129);font-size: 14px;">請輸入關鍵字</p>
+                </div>
+            </div>
+            <div class="row navtop-right align-items-center" style="color:#4ba83b;">
+                    <p class="newuser mr-3 greenhover" style="cursor: pointer;">新手上路</p>
+                <a href="">
+                    <i class="fas fa-user mr-2 greenhover"></i>
+                    <p class="mr-1 greenhover" style="float: right;">農粉登入</p>
+                </a>｜
+                    <p class="ml-1 mr-1 greenhover" style="cursor: pointer;">加入會員</p>
+              
+                <a href="" >
+                    <img src="./img/cart.PNG" class="mb-4 mr-4" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="navbottom container mt-1 mb-2 d-none d-lg-block">
+                <ul>
+                    <li class="li-green ml-1">
+                         <a  class="li-green" href="">關於無毒農</a>
+                    </li>
+                    <li class="li-red">
+                        <a  class="li-red" href="">最新消息</a>
+                    </li>
+                    <li class="li-green">
+                        <a  class="li-green" href="">粥寶寶</a>
+                    </li>
+                    <li class="li-red">
+                        <a  class="li-red" href="">產地直送</a>
+                    </li>
+                    <li class="li-green">
+                        <a  class="li-green" href="">快速到貨</a>
+                    </li>
+                    <li class="li-green">
+                        <a  class="li-green" href="">生鮮肉舖</a>
+                    </li>
+                    <li class="li-green">
+                        <a  class="li-green" href="">週配蔬果箱</a>
+                    </li>
+                    <li class="li-green">
+                        <a  class="li-green" href="">等家寶寶</a>
+                    </li>
+                    <li class="li-green">
+                        <a  class="li-green" href="">部落格</a>
+                    </li>
+                 </ul>
+              </a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="row" style="margin-top: 105px;display: flex;">
+            <a class="header-hover" href="">
+                <img src="./img/header1.gif" style="width: 95%;" alt="">
+            </a>
+        </div>
+        <div class="fivelinks row d-flex justify-content-center">
+            <ul>
+                <a href="">
+                    <li class="five-links">線上婦幼展</li>
+                </a>
+                <a href="">
+                    <li class="five-links">玉荷包荔枝</li>
+                </a>
+                <a href="">
+                    <li class="five-links">好桃趣</li>
+                </a>
+                <a href="">
+                    <li class="five-links">鮮撈泰國蝦</li>
+                </a>
+                <a href="">
+                    <li class="five-links">週配水果箱</li>
+                </a>
+            </ul>
+        </div>
+        <div class="row container d-flex justify-content-between mb-5" style="border-bottom: 1px solid #4ba83b;">
+            <a href="">
+                <div class="title" style="float: left;">
+                    <h6 class="mb-2" style="font-size: 25px; font-weight: 900;float: left;color: black;margin-left: -5%;">當季產物</h6>
+                    <h4 class="pl-4" style="float: left; line-height: 1.5;color: rgb(129, 129, 129);">嚴選在地新鮮蔬果</h4>
+                </div>
+            </a>
+            <a class="more" href="">
+                <h3 style="font-weight: 600;color: #4ba83b;">看更多&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right" style="font-size: 20px;line-height: 1;"></i></h3>
+            </a>
+        </div>
+        <div class="row d-flex">
+            <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center" style="margin-right: -10px;margin-left: -15px;">
+                <div class="img-wrap" style="cursor: pointer;height: 250px">
+                    <img src="./img/fruit1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#73bf00;color: #fff; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷藏</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">預購【頂級剪枝玉荷包荔枝】無毒農</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$629 起</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center" style="margin-right: -10px;">
+                <div class="img-wrap" style="cursor: pointer;height: 250px">
+                    <img src="./img/fruit2.jpg" style="width: 100%;height: 100%;overflow: hidden;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#ff8e88;color: #fff; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">常溫</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">預購好桃趣【平地水蜜桃】清玉果園</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$719 起</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="img-wrap" style="cursor: pointer;height: 250px">
+                    <img src="./img/fruit3.jpg" style="width: 100%;height: 100%;overflow: hidden;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#ff8e88;color: #fff; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">常溫</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">預購【阿露斯哈密瓜】台霖農場</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$420 起</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row container mb-5 post" style="cursor: pointer;">
+                <img src="./img/post.jpg" style="width: 98%;" alt="">
+            </div>
+            <div class="row container d-flex justify-content-between mt-5 mb-3" style="border-bottom: 1px solid #4ba83b;margin-left: -1px;">
+                <a href="">
+                    <div class="title" style="float: left;">
+                        <h6 class="mb-2" style="font-size: 25px; font-weight: 900;float: left;color: black;margin-left: -12px;">快速到貨</h6>
+                        <h4 class="pl-4" style="float: left; line-height: 1.5;color: rgb(129, 129, 129);">六小時急速到貨</h4>
+                    </div>
+                </a>
+                <a class="more" href="">
+                    <h3 style="font-weight: 600;color: #4ba83b;">看更多&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right" style="font-size: 20px;line-height: 1;"></i></h3>
+                </a>
+            </div>
+            <div class="row contanier mb-5">
+                <div class="col-lg-4 col-6" style="margin-right: -20px;margin-left: -1px;">
+                    <div class="img-wrap" style="cursor: pointer;">
+                        <img src="./img/fast7.jpg" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                    </div>
+                    <div class="product-title mt-4 mb-5">
+                        <div class="product-title">
+                            <span class="px-2 py-2" style="background-color:#73bf00;color: #fff; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷藏</span>
+                            <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">黑糖雜糧饅頭</span>
+                        </div>
+                        <div class="product-content mt-5 d-flex justify-content-between">
+                            <div class="price">
+                                <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$119 起</p>
+                            </div>
+                            <div class="buttons">
+                                <small class="buy py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;padding-left:30px;padding-right:30px;">選擇規格及數量</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6" style="margin-right: -20px;">
+                    <div class="img-wrap" style="cursor: pointer;">
+                        <img src="./img/fast8.jpg" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                    </div>
+                    <div class="product-title mt-4 mb-5">
+                        <div class="product-title">
+                            <span class="px-2 py-2" style="background-color:#73bf00;color: #fff; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷藏</span>
+                            <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">【南北乾貨】有機筍茸</span>
+                        </div>
+                        <div class="product-content mt-5 d-flex justify-content-between">
+                            <div class="price">
+                                <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$180 起</p>
+                            </div>
+                            <div class="buttons">
+                                <small class="buy py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;padding-left:30px;padding-right:30px;">選擇規格及數量</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mb-5">
+                    <div class="img-wrap" style="cursor: pointer;">
+                        <img src="./img/fast9.jpg" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                    </div>
+                    <div class="product-title mt-4">
+                        <div class="product-title">
+                            <span class="px-2 py-2" style="background-color:#73bf00;color: #fff; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷藏</span>
+                            <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">原味/蔓越莓乳酪手作貝果</span>
+                        </div>
+                        <div class="product-content mt-5 d-flex justify-content-between">
+                            <div class="price">
+                                <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$299 起</p>
+                            </div>
+                            <div class="buttons">
+                                <small class="buy py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;padding-left:30px;padding-right:30px;">選擇規格及數量</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row container d-flex justify-content-between mb-5" style="border-bottom: 1px solid #4ba83b;">
+            <a href="">
+                <div class="title" style="float: left;">
+                    <h6 class="mb-2" style="font-size: 25px; font-weight: 900;float: left;color: black;margin-left: -5%;">生鮮肉舖</h6>
+                    <h4 class="pl-4" style="float: left; line-height: 1.5;color: rgb(129, 129, 129);">嚴選肉品</h4>
+                </div>
+            </a>
+            <a class="more" href="">
+                <h3 style="font-weight: 600;color: #4ba83b;">看更多&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right" style="font-size: 20px;line-height: 1;"></i></h3>
+            </a>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-4 col-6" style="margin-right: -10px;margin-left: -15px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/meat4.jpg" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#96e6ff;color: #001455; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷凍</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">宅魚嚴選香鱸魚</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$288 起</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6" style="margin-right: -10px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/meat5.jpg" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#96e6ff;color: #001455; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷凍</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">萬金翅小腿</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$150</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/meat6.jpg" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#96e6ff;color: #001455; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷凍</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">良牧胸夾肉</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$258 起</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row container d-flex justify-content-between mt-5 mb-3" style="border-bottom: 1px solid #4ba83b;margin-left: -1px;">
+                <a href="">
+                    <div class="title" style="float: left;">
+                        <h6 class="mb-2" style="font-size: 25px; font-weight: 900;float: left;color: black;margin-left: -12px;">無毒粥寶寶</h6>
+                        <h4 class="pl-4" style="float: left; line-height: 1.5;color: rgb(129, 129, 129);">安心營養的寶寶副食品</h4>
+                    </div>
+                </a>
+            <a class="more" href="">
+                <h3 style="font-weight: 600;color: #4ba83b;">看更多&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right" style="font-size: 20px;line-height: 1;"></i></h3>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-6" style="margin-right: -20px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/baby1.jpg" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#ff8e88;color: #fff; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">常溫</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">冬之戀寶寶草莓米香餅</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$190 起</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6" style="margin-right: -20px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/baby2.png" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#96e6ff;color: #001455; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷凍</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">大寶寶 番茄翡翠牛肉粥</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$160</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/baby3.png" style="width: 100%;height: 250px;overflow: hidden;" alt="">
+                </div>
+                <div class="product-title mt-4 mb-5">
+                    <div class="product-title">
+                        <span class="px-2 py-2" style="background-color:#96e6ff;color: #001455; font-weight: 600;width: 55px;border-radius: 5px;font-size: 18px;">冷凍</span>
+                        <span class="pl-1" style="font-size: 18px;font-weight: 800;color:#4ba83b;">大寶寶 番茄番茄牛肉粥</span>
+                    </div>
+                    <div class="product-content mt-5 d-flex justify-content-between">
+                        <div class="price">
+                            <p style="font-size:18px; font-weight: 600;color: #33435a;font-family: Microsoft JhengHei!important;">$160</p>
+                        </div>
+                        <div class="buttons">
+                            <small class="intro px-4 py-1 mr-3" style="color: #198FA7;font-weight: 600;border: 1.5px solid #198FA7;border-radius: 5px;cursor: pointer;">介紹</small>
+                            <small class="buy px-4 py-2" style="background-color: #dc4e43;color: #fff;font-weight: 600;border-radius: 5px;cursor: pointer;">購買</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row container d-flex justify-content-between mt-5 mb-3" style="border-bottom: 1px solid #4ba83b;margin-left: 12px;">
+            <a href="">
+                <div class="title" style="float: left;">
+                    <h6 class="mb-2" style="font-size: 25px; font-weight: 900;float: left;color: black;margin-left: -12px;">產地故事</h6>
+                    <h4 class="pl-4" style="float: left; line-height: 1.5;color: rgb(129, 129, 129);">精挑細選，給你各種最新資訊</h4>
+                </div>
+            </a>
+            <a class="more" href="">
+                <h3 style="font-weight: 600;color: #4ba83b;">看更多&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right" style="font-size: 20px;line-height: 1;"></i></h3>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-6" style="margin-left: 14px;margin-right: -20px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/story1.jpg" style="width: 100%;height: 200px;overflow: hidden;" alt="">
+                </div>
+                <div class="story mt-2 mb-5">
+                    <div class="story-title">
+                        <p style="font-size: 18px; font-weight: 600;color: #c8a93f;line-height: 1.5;cursor: pointer;">【屏東享安心泰國蝦】冰鮮直送小農走出新方向</p>
+                    </div>
+                    <div class="story-content mt-2" style="text-align: justify;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">愛吃蝦的你，知道全國最大泰國蝦產地在哪嗎？在享安心陳大哥的介紹下，我們才知道，台灣九成以上泰國蝦都來自屏東九知，一座位於二重溪上游的小鄉...</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6" style="margin-right: -20px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/story2.jpg" style="width: 100%;height: 200px;overflow: hidden;" alt="">
+                </div>
+                <div class="story mt-2 mb-5">
+                    <div class="story-title">
+                        <p style="font-size: 18px; font-weight: 600;color: #c8a93f;line-height: 1.5;cursor: pointer;">【屏東可麗田可可農園】不假手他人的安心巧克力</p>
+                    </div>
+                    <div class="story-content mt-2" style="text-align: justify;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">你印象中的巧克力是什麼樣子的呢？在超市、百貨公司貨架上，被各式絢麗包裝紙簇擁著，外國語言寫著的產品介紹標示了它們的出身地：迦納、肯亞、象...</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6" style="margin-right: -20px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/story3.jpg" style="width: 100%;height: 200px;overflow: hidden;" alt="">
+                </div>
+                <div class="story mt-2 mb-5">
+                    <div class="story-title">
+                        <p style="font-size: 18px; font-weight: 600;color: #c8a93f;line-height: 1.5;cursor: pointer;">【雲林鴨迷YUMMY】百年世家，用良心養好鴨</p>
+                    </div>
+                    <div class="story-content mt-2" style="text-align: justify;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">舞台劇大師李國修說：「一輩子做好一件事，就功德圓滿。」在雲林，我們發現有個在地耕耘超過百年的養鴨人家，用了四代人的生命長度，只為圓滿一...</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row container d-flex justify-content-between mt-5 mb-3" style="border-bottom: 1px solid #4ba83b;margin-left: 12px;">
+            <a href="">
+                <div class="title" style="float: left;">
+                    <h6 class="mb-2" style="font-size: 25px; font-weight: 900;float: left;color: black;margin-left: -12px;">文章精選</h6>
+                    <h4 class="pl-4" style="float: left; line-height: 1.5;color: rgb(129, 129, 129);">精挑細選，給你各種最新資訊</h4>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-6" style="margin-left: 14px;margin-right: -20px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/post1.jpg" style="width: 100%;height: 200px;overflow: hidden;" alt="">
+                </div>
+                <div class="story mt-2 mb-5">
+                    <div class="story-title">
+                        <p style="font-size: 18px; font-weight: 600;color: #c8a93f;line-height: 1.5;cursor: pointer;">榮獲肯定繼續向前 等家寶寶團隊得獎啦！</p>
+                        <p></p>
+                    </div>
+                    <div class="story-content mt-3 pt-3" style="text-align: justify;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">大家好，我是等家寶寶社會福利協會執行長子瑜。追蹤我們比較久的朋友應該都知道，協會成立的契機，起源於 無毒農-友善環境的安心水果—...</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6" style="margin-right: -20px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/post2.jpg" style="width: 100%;height: 200px;overflow: hidden;" alt="">
+                </div>
+                <div class="story mt-2 mb-5">
+                    <div class="story-title">
+                        <p style="font-size: 18px; font-weight: 600;color: #c8a93f;line-height: 1.5;cursor: pointer;">【新里程碑：等家寶寶團隊繼續前行】水果配送週報第238週</p>
+                    </div>
+                    <div class="story-content mt-2" style="text-align: justify;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">這禮拜等家寶寶團隊的大事莫過於代表無毒農參加遠見CSR頒獎典禮啦，在活動上看到了每天影響著國內經濟走向的大企業、大集團的領導人，能參與這...</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6" style="margin-right: -20px;">
+                <div class="img-wrap" style="cursor: pointer;">
+                    <img src="./img/post3.jpg" style="width: 100%;height: 200px;overflow: hidden;" alt="">
+                </div>
+                <div class="story mt-2 mb-5">
+                    <div class="story-title">
+                        <p style="font-size: 18px; font-weight: 600;color: #c8a93f;line-height: 1.5;cursor: pointer;">母親節特別企劃【育幼院大聲公-EP4】育幼院吃什麼？（上）</p>
+                    </div>
+                    <div class="story-content mt-2" style="text-align: justify;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">吃是生活中不可或缺的一環，有人說餐桌就是一個家庭的核心，而育幼院就是這群孩子的「家」。趁著母親節的前夕，育幼院大聲公為大家帶來特別企劃，一...</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex" style="margin-left: -2%;justify-content: space-between;">
+            <div class="line col-6 ml-4" style="cursor: pointer;">
+                <img src="./img/line-join.png" style="width: 95%;" alt="">
+            </div>
+            <div class="fb col-6" style="margin-left: -3%;cursor: pointer;">
+                <img src="./img/fb-join.png" style="width: 95%;" alt="">
+            </div>
+        </div>
+        <div class="row container d-flex justify-content-between mt-5 mb-3" style="border-bottom: 1px solid #4ba83b;margin-left: 12px;">
+            <a href="">
+                <div class="title" style="float: left;">
+                    <h6 class="mb-2" style="font-size: 25px; font-weight: 900;float: left;color: black;margin-left: -12px;">企業系列</h6>
+                    <h4 class="pl-4" style="float: left; line-height: 1.5;color: rgb(129, 129, 129);font-family: Microsoft JhengHei!important;">參與CSR，一起讓社會變得更美好</h4>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="company col-lg-4 col-6" style="margin-left: 14px;margin-right: -20px;cursor: pointer;">
+                <div class="company">
+                    <img src="./img/company1.png" style="width: 100%;height: 210px;overflow: hidden;" alt="">
+                </div>
+                <div class="company mb-3" style="background-color: #F2DD9C;margin-top: -1%;">
+                    <div class="company-title">
+                        <p class="pt-3" style="font-size: 18px; font-weight: 800;font-family: Microsoft JhengHei!important;font-size:22px;line-height: 1.5;text-align: center;">企業CSR</p>
+                    </div>
+                    <div class="company-content mt-3" style="padding: 0 5%;padding-bottom: 5%;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">協助企業規劃專屬公益活動，為企業創造友善社會的無形價值</small>
+                    </div>
+                </div>
+            </div>
+         <div class="company col-lg-4 col-6" style="margin-right: -20px;cursor: pointer;">
+                <div class="company">
+                    <img src="./img/company2.png" style="width: 100%;height: 210px;overflow: hidden;" alt="">
+                </div>
+                <div class="company mb-3" style="background-color: #A2D5D5;margin-top: -1%;">
+                    <div class="company-title">
+                        <p class="pt-3" style="font-size: 18px; font-weight: 800;font-family: Microsoft JhengHei!important;font-size:22px;line-height: 1.5;text-align: center;">果樹認養</p>
+                    </div>
+                    <div class="company-content mt-3" style="padding: 0 5%;padding-bottom: 5%;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">體驗水果從無到有的過程，與農友共享水果生長的喜悅與哀愁</small>
+                    </div>
+                </div>
+            </div>
+            <div class="company col-lg-4 col-6" style="cursor: pointer;">
+                <div class="company">
+                    <img src="./img/company3.png" style="width: 100%;height: 210px;overflow: hidden;" alt="">
+                </div>
+                <div class="company mb-3" style="background-color: #C5DDC7;margin-top: -1%;">
+                    <div class="company-title">
+                        <p class="pt-3" style="font-size: 18px; font-weight: 800;font-family: Microsoft JhengHei!important;font-size:22px;line-height: 1.5;text-align: center;">企業送禮</p>
+                    </div>
+                    <div class="company-content mt-3" style="padding: 0 5%;padding-bottom: 5%;">
+                        <small style="line-height: 1.2;letter-spacing: 1px;">精選台灣出產當季優質水果，客製禮盒讓您送禮大方不失禮</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container" style="font-size: 14px;">
+            <div class="row d-flex pt-4">
+                <div class="mr-10">
+                    <img src="./img/footer-logo.png" class="d-none d-lg-block" style="width: 10%;float: left;margin-top: -2%;" alt="">
+                        <span class="about ml-2" style="line-height: 3;cursor: pointer;">關於無毒農&ensp;&ensp;｜</span>
+                        <span class="about" style="cursor: pointer;">退貨辦法&ensp;&ensp;｜</span>
+                        <span class="about" style="cursor: pointer;">合作夥伴&ensp;&ensp;｜</span>
+                        <span class="about" style="cursor: pointer;">寶寶副食品</span>
+                </div>
+                <div class="ml-5 pl-4" style="float: left;font-family: Microsoft JhengHei!important;line-height: 3;">
+                        <span class="address pr-2" style="cursor: pointer;">舒果農企業有限公司</span>
+                        <span class="address pr-2" style="cursor: pointer;"><i class="fas fa-phone-alt pr-2"></i>(02)2771-2900</span>
+                        <span class="address" style="cursor: pointer;"><i class="fas fa-map-marker-alt pr-2"></i>公司 : 台北市大安區復興南路一段205號8樓</span>
+                </div>
+            </div>
+            <div class="row d-flex" style="justify-content: center;font-family: Microsoft JhengHei!important;">
+                <small class="mt-2">客服時間： AM 09:00-12:00、PM 13:00~18:00 (週一至五) ，AM 10:00-PM 18:00 (週六)，(不含國定假日)</small>
+            </div>
+            <div class="row d-flex" style="justify-content: center;font-family: Microsoft JhengHei!important;">
+                <small class="mt-3">Copyright © 2015 無毒農</small>
+            </div>
+        </div>
+    </footer>
+    <div class="backtotop">
+        <a href="">
+            <p style="padding:15px 20px;font-size:18px; color: #fff;background-color: rgba(161, 161, 161, 0.863);border-radius: 50%;">∧</p>
+        </a>
+    </div>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+
+</body>
+</html>
